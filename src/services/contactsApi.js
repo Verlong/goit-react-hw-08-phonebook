@@ -1,7 +1,14 @@
 import { createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
+import Notiflix from 'notiflix';
+// axios.defaults.baseURL = 'https://connections-api.herokuapp.com/';
 
-axios.defaults.baseURL = 'https://6488e5780e2469c038fe7e2e.mockapi.io/';
+// const baseUrl = {
+//   AUTH: 'https://connections-api.herokuapp.com/',
+//   DB: 'https://connections-api.herokuapp.com/',
+// };
+
+// const setBaseUrl = url => (axios.defaults.baseURL = url);
 
 // First, create the thunk
 export const fetchContacts = createAsyncThunk(
@@ -18,11 +25,12 @@ export const fetchContacts = createAsyncThunk(
 
 export const addContact = createAsyncThunk(
   'contacts/addContact',
-  async (contact, thunkAPI) => {
+  async ({ name, number }, thunkAPI) => {
     try {
-      const response = await axios.post('contacts', contact);
+      const response = await axios.post('/contacts', { name, number });
       return response.data;
     } catch (e) {
+      Notiflix.Notify.failure('Something went wrong. Please try again.');
       return thunkAPI.rejectWithValue(e.message);
     }
   }
