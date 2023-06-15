@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkgoit_react_hw_08_phonebook=self.webpackChunkgoit_react_hw_08_phonebook||[]).push([[266],{266:function(e,t,n){n.r(t),n.d(t,{default:function(){return c}});var o=n(329);function c(){return(0,o.jsx)("div",{children:(0,o.jsx)("h1",{children:"Welcome to contact storage app!"})})}}}]);
+//# sourceMappingURL=266.ade678e2.chunk.js.map
