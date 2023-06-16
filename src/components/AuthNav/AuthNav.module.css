@@ -1,6 +1,11 @@
 .form {
   display: flex;
   justify-content: center;
+
+  /* * */
+  width: 360px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .form .link {
   padding: 10px 20px;
