@@ -6,7 +6,7 @@
   list-style-type: none;
   padding: 24px;
 }
-.navLink {
+.navList > .navLink {
   width: 10em;
   position: relative;
   height: 3.5em;

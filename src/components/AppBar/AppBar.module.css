@@ -2,3 +2,9 @@
   background-color: #080e26;
   color: aqua;
 }
+
+.headerContainer {
+  width: 360px;
+  margin-left: auto;
+  margin-right: auto;
+}
