@@ -1,7 +1,7 @@
 export default function Home() {
   return (
     <div>
-      <h1>Welcome to contact storage app!</h1>
+      <h1>Your Phonebook</h1>
     </div>
   );
 }

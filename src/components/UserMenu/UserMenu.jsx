@@ -8,9 +8,9 @@ export default function UserMenu() {
   const { user } = useAuth();
   return (
     <div className={css.userMenuContainer}>
-      <p className={css.userName}>{user.name}</p>
+      <p className={css.userName}>Greetings, {user.name}</p>
       <button
-        className={css.logOutBtn}
+        className={css.btn}
         type="button"
         onClick={() => dispatch(logOut())}
       >

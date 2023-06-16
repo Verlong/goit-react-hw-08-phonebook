@@ -3,7 +3,7 @@ import css from './AuthNav.module.css';
 
 export default function AuthNav() {
   return (
-    <div className={css.startContainer}>
+    <div className={css.form}>
       <NavLink className={css.link} to="register">
         Register
       </NavLink>

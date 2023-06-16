@@ -1,0 +1,37 @@
+.form {
+  display: flex;
+  justify-content: center;
+}
+.form .link {
+  padding: 10px 20px;
+  margin-left: 10px;
+  border: 2px solid transparent;
+  border-radius: 30px;
+  background-color: transparent;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  text-decoration: none;
+  margin-bottom: 24px;
+}
+
+.form .link::before {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  border-radius: 30px;
+  border: 2px solid #01f7ff;
+  opacity: 0;
+  transition: opacity 0.5s ease-out;
+}
+
+.form .link:hover {
+  border-color: #01f7ff;
+  box-shadow: 0px 3px 20px rgba(1, 255, 242, 0.712);
+}
