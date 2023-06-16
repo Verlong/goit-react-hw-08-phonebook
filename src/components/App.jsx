@@ -7,6 +7,7 @@ import { PrivateRoute } from './PrivateRoute';
 import SharedLayout from './SharedLayout/SharedLayout';
 import { useAuth } from 'hooks';
 import { refreshUser } from 'redux/auth/authOperations';
+import css from './App.module.css';
 
 const HomePage = lazy(() => import('../pages/Home.js'));
 const RegisterPage = lazy(() => import('../pages/Register'));
@@ -22,7 +23,7 @@ export const App = () => {
   }, [dispatch]);
 
   return isRefreshing ? (
-    <b>Refreshing user...</b>
+    <b className={css.upload}>Uploading user...</b>
   ) : (
     <Routes>
       <Route path="/" element={<SharedLayout />}>
