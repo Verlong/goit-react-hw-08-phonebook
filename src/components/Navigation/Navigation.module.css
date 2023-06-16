@@ -6,7 +6,7 @@
   list-style-type: none;
   padding: 24px;
 }
-.navList > .navLink {
+.navLink {
   width: 10em;
   position: relative;
   height: 3.5em;
@@ -19,10 +19,20 @@
   font-size: 16px;
   font-weight: bold;
   list-style-type: none;
-  padding: 16px;
+  /* padding: 24px; */
   text-decoration: none;
   text-align: center;
+  /* * */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
+
+/* * */
+/* .navLink span {
+  margin-top: 8px; 
+} */
 
 .navLink::after {
   content: '';
